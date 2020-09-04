@@ -73,7 +73,7 @@ class Login extends StatelessWidget {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Home("Deivi Ocampo")),
+                              builder: (context) => Home("Deivi Ocampo", 29)),
                         );
                       },
                     )),
