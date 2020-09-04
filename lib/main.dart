@@ -4,19 +4,20 @@ import 'package:logintaller/home.dart';
 void main() {
   runApp(MaterialApp(
     title: 'Named Routes Demo',
-    home: MyApp(),
+    home: Login(),
   ));
 }
 
-class MyApp extends StatelessWidget {
+class Login extends StatelessWidget {
   TextEditingController nameController = TextEditingController();
+
   TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Login Screen App'),
+          title: Text('Login Jovenes Creativos'),
         ),
         body: Padding(
             padding: EdgeInsets.all(10),
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
                     alignment: Alignment.center,
                     padding: EdgeInsets.all(10),
                     child: Text(
-                      'Codeplayon',
+                      'Estudiante',
                       style: TextStyle(
                           color: Colors.blue,
                           fontWeight: FontWeight.w500,
@@ -72,7 +73,7 @@ class MyApp extends StatelessWidget {
                         Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => SecondRoute()),
+                              builder: (context) => Home("Deivi Ocampo")),
                         );
                       },
                     )),

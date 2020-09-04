@@ -13,7 +13,7 @@ class Perfil extends StatelessWidget {
           child: Text("cerrar sesion"),
           onPressed: () {
             Navigator.of(context).pushAndRemoveUntil(
-                MaterialPageRoute(builder: (context) => MyApp()),
+                MaterialPageRoute(builder: (context) => Login()),
                 (Route<dynamic> route) => false);
           },
         ),
